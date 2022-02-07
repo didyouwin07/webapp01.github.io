@@ -1,0 +1,36 @@
+.myImg1{
+  width:750px;
+  height: 820px;
+}
+.myImg2{
+
+  width: 750px;
+  height: 820px;
+}
+
+.socials{
+  text-align: right;
+  letter-spacing: 20px;
+}
+
+.icon:hover{
+  cursor: pointer;
+}
+
+.nav-buttons{
+  position:absolute;
+  z-index: 1;
+  color:#F7F7F7;
+  font-size: 12px;
+  right:120px;
+  top:48px;
+  word-spacing: 20px;
+}
+
+.button-nav{
+  cursor: pointer;
+}
+
+.contact{
+
+}

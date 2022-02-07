@@ -1,0 +1,34 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 33px 41px;
+  flex-direction: column;
+}
+
+.logo{
+  text-align: left;
+  margin-bottom: 264px;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 80%;
+  margin-top: 175px;
+}
+
+.ios-button{
+  padding:13px;
+}
+
+.highlight-text{
+  font-size: 42px;
+  text-align: left;
+}
+
+.child-text{
+  font-size: 16px;
+  color: #6D6D6D;
+  text-align: left;
+}
