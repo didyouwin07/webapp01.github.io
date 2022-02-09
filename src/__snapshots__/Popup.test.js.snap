@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="popup-box"
+  data-testid="popup"
+>
+  <div
+    className="box"
+  >
+    <span
+      className="close-icon"
+    >
+      x
+    </span>
+  </div>
+</div>
+`;

@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import App from "./App";
+import Slider from "./Slider";
 import React from "react";
 import ReactDOM from "react-dom";
 import { cleanup } from "@testing-library/react";
@@ -10,13 +10,13 @@ afterEach(cleanup);
 
 it("renders without crashing", () => {
   const div = document.createElement("div");
-  ReactDOM.render(<App></App>, div);
+  ReactDOM.render(<Slider></Slider>, div);
 });
 
 it("renders button correctly", () => {
-  const { getByTestId } = render(<App></App>);
+  const { getByTestId } = render(<Slider></Slider>);
 });
 it("matches snapshot", () => {
-  const tree = renderer.create(<App></App>).toJSON();
+  const tree = renderer.create(<Slider></Slider>).toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<nav
+  className="navbar"
+  data-tesid="nav"
+>
+  <div
+    className="logo"
+  >
+    <img
+      src="/Cat-N-Dog-Logo copy.png"
+    />
+  </div>
+  <div
+    className="highlight-text"
+  >
+    <p>
+      Lorem ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+  </div>
+  <div
+    className="child-text"
+  >
+    Lorem ipsum has been the industry's standard dummy text ever since the 1550s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.
+  </div>
+  <div
+    className="buttons"
+  >
+    <div
+      className="ios-button"
+      style={
+        Object {
+          "display": "inline-block",
+          "height": 75,
+          "width": 255,
+        }
+      }
+    >
+      <a
+        href="/"
+        rel="noopener noreferrer"
+        style={
+          Object {
+            "background": "url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat",
+            "backgroundSize": "contain",
+            "display": "inline-block",
+            "height": "100%",
+            "overflow": "hidden",
+            "padding": "5px",
+            "textDecoration": "none",
+            "width": "100%",
+          }
+        }
+        target="_blank"
+      >
+         
+      </a>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "inline-block",
+          "height": 75,
+          "width": 255,
+        }
+      }
+    >
+      <a
+        href="/"
+        rel="noopener noreferrer"
+        style={
+          Object {
+            "background": "url(https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png) no-repeat",
+            "backgroundSize": "contain",
+            "display": "inline-block",
+            "height": "100%",
+            "overflow": "hidden",
+            "padding": "5px",
+            "textDecoration": "none",
+            "width": "100%",
+          }
+        }
+        target="_blank"
+      >
+         
+      </a>
+    </div>
+  </div>
+</nav>
+`;

@@ -1,16 +1,16 @@
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   padding: 33px 41px;
   flex-direction: column;
 }
 
-.logo{
+.logo {
   text-align: left;
   margin-bottom: 264px;
 }
 
-.buttons{
+.buttons {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -18,17 +18,17 @@
   margin-top: 175px;
 }
 
-.ios-button{
-  padding:13px;
+.ios-button {
+  padding: 13px;
 }
 
-.highlight-text{
+.highlight-text {
   font-size: 42px;
   text-align: left;
 }
 
-.child-text{
+.child-text {
   font-size: 16px;
-  color: #6D6D6D;
+  color: #6d6d6d;
   text-align: left;
 }
