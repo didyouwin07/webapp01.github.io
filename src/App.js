@@ -11,12 +11,44 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
+import { useQuery, gql, useMutation } from "@apollo/client";
+
+const addContactMutation = gql`
+  mutation addContact($name: String!, $email: String!, $message: String!) {
+    addContact(name: $name, email: $email, message: $message) {
+      name
+      email
+      message
+    }
+  }
+`;
 
 function App(): any {
   const [isOpen, setIsOpen] = useState(false);
 
   const togglePopup = () => {
     setIsOpen(!isOpen);
+  };
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [addContact, { error, loading, data }] = useMutation(
+    addContactMutation
+  );
+
+  const addContacts = () => {
+    addContact({
+      variables: {
+        name: name,
+        email: email,
+        message: message,
+      },
+    });
+    setEmail("");
+    setName("");
+    setMessage("");
+    togglePopup();
   };
 
   return (
@@ -37,21 +69,38 @@ function App(): any {
                   <label className="lbl" for="name">
                     Name
                   </label>
-                  <input type="text" name="name" id="name" />
+                  <input
+                    onChange={(e) => setName(e.target.value)}
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
                 </div>
                 <div className="form-fields">
                   <label className="lbl" for="email">
                     E-mail
                   </label>
-                  <input type="email" name="email" id="email" />
+                  <input
+                    onChange={(e) => setEmail(e.target.value)}
+                    type="email"
+                    name="email"
+                    id="email"
+                  />
                 </div>
                 <div className="form-fields">
                   <label className="lbl" for="message">
                     Message
                   </label>
-                  <input type="text" name="message" id="message" />
+                  <input
+                    onChange={(e) => setMessage(e.target.value)}
+                    type="text"
+                    name="message"
+                    id="message"
+                  />
                 </div>
-                <div class="btn btn-dark cnt-submit">Submit</div>
+                <div className="btn btn-dark cnt-submit" onClick={addContacts}>
+                  Submit
+                </div>
                 <p className="more-info">
                   <span className="info-cnt">
                     Need more info? hello@newzera.com{" "}
