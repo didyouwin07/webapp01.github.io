@@ -18,6 +18,7 @@ const Navbar = (): any => {
   const { loading, error, data } = useQuery(getHomePageDetails);
   if (error) return <p>Error </p>;
   if (loading) return <p>Loading...</p>;
+  console.log(data);
   console.log(data.HomePageDetails.title);
   return (
     <nav data-tesid="nav" className="navbar">
