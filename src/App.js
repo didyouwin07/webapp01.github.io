@@ -120,5 +120,5 @@ function App(): any {
     </div>
   );
 }
-<App />;
+
 export default App;
