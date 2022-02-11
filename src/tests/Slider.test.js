@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Navbar from "./Navbar";
+import Slider from "../components/Slider";
 import React from "react";
 import ReactDOM from "react-dom";
 import { cleanup } from "@testing-library/react";
@@ -10,13 +10,13 @@ afterEach(cleanup);
 
 it("renders without crashing", () => {
   const div = document.createElement("div");
-  ReactDOM.render(<Navbar></Navbar>, div);
+  ReactDOM.render(<Slider></Slider>, div);
 });
 
 it("renders button correctly", () => {
-  const { getByTestId } = render(<Navbar></Navbar>);
+  const { getByTestId } = render(<Slider></Slider>);
 });
 it("matches snapshot", () => {
-  const tree = renderer.create(<Navbar></Navbar>).toJSON();
+  const tree = renderer.create(<Slider></Slider>).toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -3,16 +3,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import MobileStoreButton from "react-mobile-store-button";
 import "./Navbar.css";
 import React from "react";
-import { useQuery, gql } from "@apollo/client";
-
-const getHomePageDetails = gql`
-  {
-    HomePageDetails(id: 1) {
-      title
-      content
-    }
-  }
-`;
+import { useQuery } from "@apollo/client";
+import { getHomePageDetails } from "../queries/getHomePageDetails";
 
 const Navbar = (): any => {
   const { loading, error, data } = useQuery(getHomePageDetails);

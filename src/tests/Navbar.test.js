@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Popup from "./Popup";
+import Navbar from "../components/Navbar";
 import React from "react";
 import ReactDOM from "react-dom";
 import { cleanup } from "@testing-library/react";
@@ -10,13 +10,13 @@ afterEach(cleanup);
 
 it("renders without crashing", () => {
   const div = document.createElement("div");
-  ReactDOM.render(<Popup></Popup>, div);
+  ReactDOM.render(<Navbar></Navbar>, div);
 });
 
 it("renders button correctly", () => {
-  const { getByTestId } = render(<Popup></Popup>);
+  const { getByTestId } = render(<Navbar></Navbar>);
 });
 it("matches snapshot", () => {
-  const tree = renderer.create(<Popup></Popup>).toJSON();
+  const tree = renderer.create(<Navbar></Navbar>).toJSON();
   expect(tree).toMatchSnapshot();
 });
